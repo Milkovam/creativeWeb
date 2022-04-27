@@ -1,0 +1,161 @@
+/* the four css declarations beneath are all for the navbar at the top of the webpage */
+#navBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ACD0D4;
+    position: relative; 
+    text-align: center;
+}
+
+
+#navBar li{
+    float: none;
+    display: inline-block;
+}
+
+
+#navBar li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 23px;
+    width: 200px;
+    padding: 12px;
+    position: relative;
+}
+
+
+#navBar li a:hover{
+    background-color: #000000;
+}
+
+
+/* css properties for the div container */
+#divContainer{
+    width: 1600px;
+    height: 900px;
+    margin: auto;
+    border: 3px solid #000000 ;
+    position: relative;
+    background-color:#DCC4B4;
+    font-family: "Helvetica";
+    background-image: url(../Images/classroom.jpg);
+    background-size: cover;
+}
+
+
+/* css properties for the header of the webpage*/
+header{
+    position: relative;
+    text-align: center;
+    letter-spacing: 2px;
+    border: 2px solid #000000;
+    background-color:#6495ed;
+    font-size: 20px; 
+    text-transform: uppercase;
+}
+ 
+
+/* properties for the student reading image, declaring position and z-index */
+#studentReading{
+    position: absolute;
+    width: 270px;
+    height: 350px;
+    top: 410px;
+    left: 120px;
+    z-index: 1;
+}
+
+
+/* css properties for the whiteboard image */
+#crazyMath{
+    position: absolute;
+    width: 966px;
+    height: 380px;
+    border: 3px solid #000000;
+    left: 317px;
+    top: 244px;
+    z-index: 0;
+    opacity: 0;
+    animation: mathAppear ease-in-out 15s forwards 4s;
+}
+
+
+/* keyframes for the opacity from the whiteboard appearing */
+@keyframes mathAppear {
+    0%{opacity: 0;}
+    20%{opacity: 0.4;}
+    40%{opacity: 0.6;}
+    60%{opacity: 0.8;}
+    80%{opacity: 0.9;}
+    100%{opacity: 1;}
+}
+
+
+/* properties for the professor with face towards the user */
+#profFrontWalk{
+    position: absolute;
+    width: 380px;
+    height: 400px;
+    z-index: 1;
+    top: 500px;
+    left: 850px;
+    animation: profWalk ease-in-out 4s forwards;
+}
+
+
+/* css properties for the professor facing away from the user */
+#professorBack{
+    position: absolute;
+    width: 280px;
+    height: 360px;
+    z-index: 1;
+    top: 520px;
+    left: 850px;
+    animation: profGoingCrazy 5s linear forwards 4s; 
+    transform: scaleX(0)
+
+}
+
+
+/* animation for the professor walking from the side of the screen to the front of the whiteboard */
+@keyframes profWalk{
+    0%{left: 1300px;}
+    20%{left: 1150px;}
+    40%{left: 1000px;}
+    60%{left: 850px;}
+    61% {transform: scaleX(1)}
+    95% {opacity: 1;}
+    100%{opacity: 0; transform: scaleX(-0);}
+}
+
+
+/* css animation for the professor going crazy all over the whiteboard*/
+@keyframes profGoingCrazy{
+    0% {opacity: 1; transform: scaleX(0);}
+    5% {left: 850px; top: 220px; transform: scaleX(-1);}
+    10% {left: 850px; Top:500px;}
+    20% {left: 500px; Top:250px;}
+    30% {left: 150px; Top:400px;}
+    40% {left: 700px; Top:230px;}
+    50% {left: 900px; Top:354px;}
+    60% {left: 200px; Top:250px;}
+    70% {left: 800px; Top:400px;}
+    80% {left: 1100px; Top:220px;}
+    90% {left: 350px; Top:390px;}
+    100% {left: 730px; Top:530px; transform: scaleX(-1);}
+}
+
+
+
+a:active{
+    color: #000000;
+}
+
+
+a:visited{
+    color: #000000;
+}

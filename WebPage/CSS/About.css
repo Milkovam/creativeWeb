@@ -1,0 +1,333 @@
+/*This is the container for the page, size is defined inside */
+#divContainer{
+    width: 1600px;
+    height:900px;
+    position: relative;
+    margin: auto;
+    border: 3px solid #000000;
+    overflow: hidden;
+    animation: myanimation 5s infinite;
+    font-family: Helvetica;
+}
+
+@keyframes myanimation {
+    0%{background-color: #DCC4B4;}
+    20%{background-color: #E2D3D5;}
+    40%{background-color: #B6D4C4;}
+    50%{background-color: #E8D7CA}
+    70%{background-color: #B6D4C9;}
+    80% {background-color: #DCC4B4;}
+    90%{background-color: #E2D3D5;}
+    100%{background-color: #E8D7CA;}
+}
+
+
+/*Design of header*/
+header{
+    position: relative;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #000000;
+    background-color: #6495ED;
+    border: 3px solid #000000;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+
+
+/*Container for the door, used whenever the page is opened*/
+.containerDoor #rightContainerDoor{
+    background: #C1C1C1;
+    width: 1600px;
+    height: 900px;
+    position: absolute;
+    border-left: 4px solid #000000;
+    right: 1600px;
+    bottom: 0px;
+    z-index: 1;
+    animation: SlideRight 8s;
+}
+
+
+@keyframes SlideRight{
+    0%{transform: translateX(1600px)}
+    30%{transform: translateX(800px)}
+    100%{transform: translateX(0px)}
+}
+
+
+img{
+    max-width: 900px;
+    height: 800px;
+    margin-top: 70px;
+    margin-left: 800px;
+}
+
+
+.student{
+    width: 300px;
+    height: 0px;
+    margin-top: auto;
+    margin-left: 200px;
+}
+
+
+#navBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ACD0D4;
+    position: relative; 
+    text-align: center;
+}
+
+
+#navBar li{
+    float: none;
+    display: inline-block;
+}
+
+
+#navBar li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 23px;
+    width: 200px;
+    padding: 12px;
+    position: relative;
+}
+
+
+/*Check all nav bars with a delay on them*/
+#navBar li a:hover{
+    background-color: #000000;
+}
+
+
+/* This is all about Info button and content in Info button */
+.hoverAbout #showAbout{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color:#FFFFFF;
+    width: 500px;
+    height: 400px;
+    line-height: 17px;
+    left: 19%;
+    top: 50%;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: none;
+    border: 5px solid #000000;
+}
+
+
+.hoverAbout{
+    background-color:#C1C1C1;
+    color: #000000;
+    width: 190px;
+    height: 25px;
+    margin-top: 28px;
+    font-size: 22px;
+    text-align: center;
+    list-style: none;
+    border: 5px solid #000000;
+}
+
+
+.hoverAbout:hover #showAbout{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+
+#aboutBar:hover{
+    background-color: #008000;  
+    transition-duration: 1.0s;}
+
+
+/* This is all about study and courses button and content in study and courses  button */
+.hoverInfo2 #info22{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color:#FFFFFF;
+    width: 500px;
+    height: 480px;
+    line-height: 17px;
+    left: 19%;
+    top: 43%;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: none;
+    border: 5px solid #000000;
+}
+
+
+.hoverInfo2{
+    background-color:#C1C1C1;
+    color: #000000;
+    width: 190px;
+    height: 25px;
+    text-align: center;
+    font-size: 22px;
+    list-style: none;
+    margin-bottom: auto;
+    border: 5px solid #000000;
+}
+
+
+.hoverInfo2:hover #info22{
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 1s;
+    transform:scale(1.05);
+}
+
+
+#studieogkurs:hover{
+    background-color: #008000;
+    transition-duration: 0.5s; 
+}
+
+/* This is photo, which have been used in Study and courses*/
+.photo1{
+    height: 200px;
+    width: 200px;
+    top:200px;
+    right: 150px;
+    position: absolute;
+}
+
+
+
+/* This is all about Goal button */
+.hoverGoal #showGoal{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color:#FFFFFF;
+    width: 500px;
+    height: 300px;
+    line-height: 17px;
+    left: 19%;
+    top: 55%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: none;
+    border: 5px solid #000000;
+}
+
+
+.hoverGoal{
+    background-color:#C1C1C1 ;
+    color: #000000;
+    width: 190px;
+    height: 22px;
+    text-align: center;
+    font-size: 22px;
+    list-style: none;
+    border: 5px solid #000000;
+}
+
+.hoverGoal:hover #showGoal{
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 1s;
+    transform:scale(1.05);
+}
+
+
+
+#goalBar:hover{ 
+    background-color: #008000;
+    transition-duration: 0.5s; 
+}
+/* This is photo, which have been used in goal button*/
+.photo2{
+    height: 150px;
+    width: 150px;
+    top:70px;
+    right: 150px;
+    position: absolute;
+}
+
+/* This is all about study and courses button and content in Why to choose UK  button */
+
+.hoverUk #showStudy{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color:#FFFFFF;
+    width: 500px;
+    height: 500px;
+    line-height: 17px;
+    left: 19%;
+    top: 40%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: none;
+    border: 5px solid #000000;
+}
+
+.hoverUk{
+    background-color:#C1C1C1 ;
+    color: #000000;
+    width: 190px;
+    height: 22px;
+    text-align: center;
+    font-size: 22px;
+    list-style: none;
+    border: 5px solid #000000;
+}
+
+.hoverUk:hover #showStudy{
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 1s; 
+    transform: scale(1.05);
+}
+
+#collegeBar:hover{
+    background-color: #008000;
+    transition-duration: 0.5s; 
+}
+
+/*Photo of a proffesor which have been used in container with hover*/
+.teacherPhoto{
+    height: 300px;
+    width: 300px;
+    top:410px;
+    right: 1290px;
+    position: absolute;
+    transition: transform .2s;
+}
+
+
+.teacherPhoto:hover{
+    transform: scale(1.5);
+}
+
+/*This is photo, which have been used in why to choose UK button*/
+.graduateCartoon{
+    height: 250px;
+    width: 190px;
+    top: 200px;
+    right: 150px;
+    position: absolute;
+}
+
+#setning1{
+    font-size: 25px;
+    text-align: center;
+    color: #5A3439;
+    font-family: cursive;
+    font-family: helvetica;
+}

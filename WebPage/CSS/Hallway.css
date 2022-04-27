@@ -1,0 +1,153 @@
+/* properties for the container div */
+#divContainer{
+    position: relative;
+    margin: auto;
+    width: 1600px;
+    height: 900px;
+    border: 3px solid #000000;
+    background-image: url(../Images/hallway.jpg);
+    background-size: cover;
+    font-family: helvetica;
+}
+
+
+/* css properties for the header */
+header{
+    border: 2px solid #000000;
+    text-align: center;
+    background-color: #6495ed;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* div for the post behind the signs */
+#postPicDiv{
+    position: absolute;
+    width: 40px;
+    height: 303px;
+    left: 860px;
+    top: 424px;
+}
+
+
+/* just making the image inherit properties from the div */
+#postPic{
+    position: absolute ;
+    width: inherit;
+    height: inherit;
+}
+
+
+/* positions for all of the arrows and some text below*/
+#greenArrowImg{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 810px;
+    top: 420px;   
+} 
+
+#orangeArrowImg{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 780px;
+    top: 463px;    
+} 
+
+#blueArrowImg{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 780px;
+    top: 505px;    
+} 
+
+#brownArrowImg{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 780px;
+    top: 549px;    
+} 
+
+#greenArrowTxt{
+    position: absolute;
+    top: 385px;
+    left: 850px;
+    font-size: 38px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* hover class for the link so that the div and the text is affected by the transform */
+#arrowTxt a:hover *{
+    transform: scale(1.2);
+}
+
+
+/* making a transition for all child elements of the #arrowTxt div */
+#arrowTxt *{
+    transition: transform 0.2s linear;
+}
+
+
+/* css declarations for the text on the signs */
+#orangeArrowTxt{
+    position: absolute;
+    top: 428px;
+    left: 828px;
+    font-size: 38px;
+    color: #000000;
+    text-decoration:none;
+}
+
+
+#blueArrowTxt{
+    position: absolute;
+    top: 470px;
+    left: 833px;
+    font-size: 38px;
+    color: #000000;
+    text-decoration:none;
+}
+
+
+#brownArrowTxt{
+    position: absolute;
+    top: 515px;
+    left: 833px;
+    font-size: 38px;
+    color: #000000;
+    text-decoration:none;
+}
+
+
+/* css properties for the student image div, also assigning a animation to it */
+#studentPicDiv{
+    position: absolute;
+    width: 160px;
+    height: 280px;
+    left: 1000px;
+    top: 445px;
+    animation: spasere 5s ease-in-out;
+}
+
+
+/* declaring that the picture should inherit width and height from the div */
+#studentPic{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+
+/* making an animation for the student walking up the stairs */
+@keyframes spasere{
+    0%{top: 620px;}
+    33.3%{top:565px;}
+    66.6%{top:500px;}
+    100%{top:445px;}
+}

@@ -1,0 +1,156 @@
+/* css declarations for the container div, which is the whole webpage */
+#divContainer{
+    position: relative;
+    width: 1600px;
+    height: 900px;
+    border: 3px solid #000000;
+    margin: auto;
+    background-image: url(../Images/facadeHK.jpg);
+    background-size: cover;
+    font-family: helvetica;
+}
+
+
+/* different decorations to the p element where we set the position and font etc */
+a p{
+    text-align: center;
+    font-family: "Helvetica";
+    top: 430px;
+    left: 350px;
+    position: absolute;
+    cursor: default;
+    display: block;
+    
+}
+
+
+/* css properties for the span element also referring to an animation */
+a p span {
+    position: relative;
+    display: inline-block;
+    font-size: 45px;
+    text-shadow: 0 2px 0 #ffffff;
+    animation: jumping 1s ease infinite alternate;
+    transform: scale(1);
+}
+
+
+/* making all of the span children have animations */
+a p span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+a p span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+a p span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+a p span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+a p span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+a p span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+a p span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+a p span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+a p span:nth-child(9) {
+   animation-delay: 0.9s;
+}
+
+a p span:nth-child(10) {
+   animation-delay: 0.10s;
+}
+
+a p span:nth-child(11) {
+   animation-delay: 0.11s;
+}
+
+a p span:nth-child(12) {
+    animation-delay: 0.12s;
+}
+
+a p span:nth-child(13) {
+    animation-delay: 0.13s;
+}
+
+a p span:nth-child(14) {
+    animation-delay: 0.14s;
+}
+
+a p span:nth-child(15) {
+    animation-delay: 0.15s;
+}
+
+a p span:nth-child(16) {
+    animation-delay: 0.16s;
+}
+
+a p span:nth-child(17) {
+    animation-delay: 0.17s;
+}
+
+a p span:nth-child(18) {
+    animation-delay: 0.18s;
+}
+
+a p span:nth-child(19) {
+    animation-delay: 0.19s;
+}
+
+a p span:nth-child(20) {
+    animation-delay: 0.20s;
+}
+
+
+/* css animation for jumping letters */
+@keyframes jumping {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #B6D4C9, 0 2px 0 #B6D4C9, 0 3px 0 #B6D4C9, 0 4px 0 #B6D4C9,
+      0 5px 0 #B6D4C9, 0 6px 0 #B6D4C9, 0 7px 0 #B6D4C9, 0 8px 0 #B6D4C9, 0 9px 0 #B6D4C9;
+  }
+}
+
+
+/* decorating the link for removing the underline and the blue color */
+a{
+    top: 600px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* styling the p tag to have a hover class  */
+a p:hover{
+    color: #ACD0D4;
+}
+
+
+h1 {
+    color: #FFFFFF;
+    text-shadow: 0 5px 15px #A5BFC5;
+    position: absolute;
+    font-size: 82px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 300px;
+    left: 550px;
+    transform: translateX(-30%) translateY(30%);
+}

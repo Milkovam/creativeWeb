@@ -1,0 +1,151 @@
+/* Container div for the website, and different declarations to style whatever's inside it */
+#divContainer{
+    position: relative;
+    width: 1600px;
+    height: 900px;
+    border: 3px solid #000000;
+    margin: auto;
+    background-color: #DCC4B4;
+    font-family: "helvetica";
+    background-image: url(../Images/library.png);
+    background-size: cover;
+}
+
+
+#textWhiteboard{
+    position: absolute;
+    transition-property: right;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    z-index: 1;
+}
+
+/* Positioning text and declaring different style properties to it. 
+Also referring to a animation for the text */
+#textLi{
+    position: absolute;
+    opacity: 1;
+    font-size: 20px;
+    left: 600px;
+    top: 128px;
+    opacity: 0;
+    animation: textAppear 5s ease-in-out 5s forwards;
+    width: 400px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* since the "br" element isn't allowed as a child 
+element in li we had to declare a margin to make space between the li's*/
+#textLi li{
+    margin: 0 0 15px 0;
+}
+
+
+/* The next four css declarations are for the navbar at the top of the websites */
+#navBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ACD0D4;
+    position: relative; 
+    text-align: center;
+}
+
+
+#navBar li{
+    float: none;
+    display: inline-block;
+}
+
+#navBar li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 23px;
+    width: 200px;
+    padding: 12px;
+    position: relative;
+}
+
+#navBar li a:hover{
+    background-color: #000000;
+}
+
+/* css properties for the header element */
+header{
+    position: relative;
+    text-align: center;
+    letter-spacing: 2px;
+    border: 2px solid #000000;
+    background-color:#6495ed;
+    font-size: 20px; 
+    text-transform: uppercase;
+}
+
+
+/* position for the whiteboard */
+#whiteboard{
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    left: 720px;
+    top: 450px;
+    z-index: 0;
+}
+
+
+/* position for the professor and an animation referance*/
+#prof{
+    position: absolute;
+    height: 340px;
+    width: 340px;
+    top: 500px;
+    left: 260px;
+    animation: spasere 3s ease-in-out 5s forwards;
+    z-index: 2;
+}
+
+
+/* css declarations for the chatbubble from */
+#profChatBubble{
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    z-index: 11;
+    top: 330px;
+    left: 150px;
+    width: 600px;
+    height: 100px;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    animation: chatBubbleAppear 1s ease-out 3s forwards;
+}
+
+
+/* keyframes for the animations referenced earlier in the code for the professor and everything else */
+@keyframes chatBubbleAppear{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity:1;}
+}
+
+
+@keyframes spasere{
+    0%{left: 260px;}
+    33.3%{left:300px;}
+    66.6%{left:380px;}
+    100%{left:440px;}
+}
+
+@keyframes textAppear{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity:1;}
+}
